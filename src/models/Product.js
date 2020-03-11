@@ -11,14 +11,14 @@ const ProductSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    url: {
+    img_url: {
         type: String,
         required: true,
     },
     createdAt: {
         type: Date,
         default: Date.now,
-    },
+    }
 });
 
 ProductSchema.plugin(mongoosePaginate);
